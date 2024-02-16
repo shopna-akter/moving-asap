@@ -1,11 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>jjjjj</h1>
+
+<body class="poppins">
+    <header>
+        <div class="bg-slate-900 flex px-16 h-12 pt-3 ">
+            <p class="text-white flex gap-3 border-r pr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 pt-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                info@movingasap.ca
+            </p>
+            <p class="text-white flex gap-4 pl-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pt-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>
+                  
+                </svg>
+                Mobile: +6475401453
+            </p>
+            
+        </div>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <img class="h-28" src="logo.webp" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-xl"><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary class="text-xl">Service</summary>
+                                <ul class="p-2 mr-2 text-xl w-[700px] flex">
+                                    <div>
+                                        <li><a>Residential Movers </a></li>
+                                        <li><a>Furniture Mover</a></li>
+                                        <li><a>House Movers</a></li>
+                                        <li><a>Apartment/Condo Movers</a></li>
+                                        <li><a>Appliance Movers</a></li>
+                                    </div>
+                                    <div>
+                                        <li><a>Commercial Movers</a></li>
+                                        <li><a>Office Movers</a></li>
+                                        <li><a>Business Movers</a></li>
+                                        <li><a>Corporate Movers</a></li>
+                                    </div>
+                                    <div>
+                                        <li><a>Piano Mover</a></li>
+                                        <li><a>Long distance Moving</a></li>
+                                        <li><a>Small Movers</a></li>
+                                        <li><a>Last Minute Moving</a></li>
+                                        <li><a>Same Day Moving</a></li>
+                                        <li><a>Local Moving Services</a></li>
+                                        <li><a>Express Moving</a></li>
+                                        <li><a>Senior Moving</a></li>
+                                    </div>
+                                    <div>
+                                        <li><a>Box Rental</a></li>
+                                        <li><a>Labour Services</a></li>
+                                        <li><a>Furniture Assembly Services</a></li>
+                                        <li><a>Professional Packing</a></li>
+                                        <li><a>Man Power</a></li>
+                                        <li><a>Box & Supplies</a></li>
+                                        <li><a>Packing & Unpacking</a></li>
+                                    </div>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="text-xl">Locations</summary>
+                                <ul class="flex p-3 text-xl w-[700px]">
+                                    <div class="mr-44 pb-2">
+                                        <li class="pb-2">Toronto</li>
+                                        <li class="pb-2">Barrie</li>
+                                        <li class="pb-2">Bratdford</li>
+                                        <li class="pb-2">Braford</li>
+                                        <li class="pb-2">Peterborough</li>
+                                        <li class="pb-2">Newmarket</li>
+                                        <li class="pb-2">Milton</li>
+                                        <li class="pb-2">Guelph</li>
+                                    </div>
+                                    <div>
+                                        <li class="pb-2">Paris</li>
+                                        <li class="pb-2">Oshawa</li>
+                                        <li class="pb-2">Richmond</li>
+                                        <li class="pb-2">Belleville</li>
+                                        <li class="pb-2">Port Hope</li>
+                                        <li class="pb-2">Orillia</li>
+                                        <li class="pb-2">Innisfil</li>
+                                        <li class="pb-2">Collingwood</li>
+                                    </div>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="text-xl"><a>About</a></li>
+                        <li class="text-xl"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-active btn-secondary rounded-none hover:bg-white mr-4 hover:text-black">Get a Quote</button>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center bg-gradient-to-r from-[#D220CC] to-[#00D8FF] h-full min-h-96">
+            <h1 class="text-7xl text-white mb-6 pt-16 font-extrabold">
+                Your Trusted Moving Solution
+            </h1>
+            <h4 class="text-white text-2xl mb-4 font-extrabold">Reliable and efficient, we are your trusted moving solution.
+            </h4>
+            <button class="bg-white text-purple-600 flex rounded-sm px-5 py-2 ml-auto mr-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                Call Now
+            </button>
+        </div>
+    </header>
+    <main class="mt-24">
+        <h3 class="text-sm font-semibold text-white text-center mx-auto p-0  bg-[#D220
+        CC] w-48">OUR SERVICE</h3>
+        <h1 class="text-3xl text-black text-center pt-5 font-bold mx-auto">We are providing the following services</h1>
+        <div class="mx-10 gap-12 mt-5">
+            <div class="flex gap-12 mb-16">
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl h-[150px]">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                
+            </div>
+            <div class="flex gap-12 mb-16">
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl h-[150px]">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                
+            </div>
+            <div class="flex gap-12 mb-16">
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl h-[150px]">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                
+            </div>
+            <div class="flex gap-12 mb-16">
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl h-[150px]">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                <div class="bg-white shadow-lg flex flex-col items-center justify-center w-2/12 text-center hover:shadow-2xl">
+                    <img src="house-150x150.webp" class="h-16 pb-2" alt="">
+                    <h3 class="text-black font-semibold">House Movers</h3>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
